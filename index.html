@@ -3,98 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دکتر مهدی پاک فطرت | مدرس دانشگاه و استاد فن بیان</title>
-  <meta name="description" content="دکتر مهدی پاک فطرت، مدرس دانشگاه و استاد فن بیان، از ۱۰ سخنران برتر کشور در مسابقه بزرگ تریبون است. ترکیب دانش فنی و مهارت سخنوری را در قالب برند شخصی «مهندس سخنور» آموزش می‌دهد.">
-  <meta name="keywords" content="مهدی پاک فطرت, دکتر مهدی پاک فطرت, مدرس فن بیان, استاد سخنوری, سخنران حرفه ای, آموزش فن بیان, مهارت های ارتباطی, مسابقه تریبون, مهندس سخنور">
-  <meta name="author" content="Mehdi Pakfetrat">
+  <meta name="description" content="دکتر مهدی پاک فطرت، مدرس دانشگاه و استاد فن بیان، با بیش از ۲۰ مقاله در حوزه فن بیان و مدیریت شهری.">
+  <title>دکتر مهدی پاک فطرت | فن بیان برای مدیران آینده‌نگر</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
     body {
-      font-family: "Vazirmatn", sans-serif;
-      background: linear-gradient(135deg, #f7f8fa, #eaeaea);
       margin: 0;
-      color: #222;
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(270deg, #0b0b0b, #111111, #151515, #0b0b0b);
+      background-size: 800% 800%;
+      animation: goldFlow 12s ease infinite;
+      color: #f0c05a;
       text-align: center;
-      line-height: 1.8;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
-    header {
-      background: linear-gradient(120deg, #004aad, #0076b6);
-      color: #fff;
-      padding: 60px 20px;
-      border-bottom: 6px solid #ffd700;
+
+    @keyframes goldFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    header h2 {
-      font-weight: 400;
-      font-size: 1.2rem;
-      color: #fff9d9;
-    }
-    .photo {
-      margin-top: -60px;
-    }
-    .photo img {
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid #fff;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-    section {
+
+    .container {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
     }
-    section h3 {
-      color: #004aad;
-      border-bottom: 2px solid #ffd700;
+
+    h1 {
+      font-size: 2.6rem;
+      margin-top: 40px;
+      color: #ffd875;
+      letter-spacing: 0.6px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #c7a74d;
+      margin-top: 6px;
+    }
+
+    .bio {
+      max-width: 700px;
+      margin: 28px auto;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #e6e6e6;
+      background: rgba(255,255,255,0.03);
+      padding: 22px;
+      border-radius: 12px;
+      border: 1px solid rgba(212,175,55,0.08);
+    }
+
+    .button {
       display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-    footer {
-      background: #004aad;
-      color: #fff;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #ffd700;
+      margin-top: 24px;
+      background: linear-gradient(180deg, #f4d06f, #d4af37);
+      color: #000;
+      padding: 12px 28px;
+      border-radius: 50px;
       text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+      transition: transform .28s ease, box-shadow .28s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.55);
+    }
+
+    .section-title {
+      margin-top: 48px;
+      font-size: 1.15rem;
+      color: #ffcc66;
+      display: inline-block;
+      padding-bottom: 6px;
+      border-bottom: 2px solid rgba(255,204,102,0.18);
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .stat-box {
+      background: rgba(255, 215, 0, 0.06);
+      border: 1px solid rgba(255, 215, 0, 0.12);
+      padding: 18px 22px;
+      border-radius: 14px;
+      width: 180px;
+      transition: transform .22s ease, background .22s ease;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-6px);
+      background: rgba(255, 215, 0, 0.14);
+    }
+
+    .stat-box h3 {
+      color: #ffd875;
+      font-size: 1.35rem;
+      margin: 0;
+    }
+
+    .stat-box p {
+      color: #d6d6d6;
+      font-size: 0.95rem;
+      margin: 8px 0 0;
+    }
+
+    .links {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .social {
+      color: #ffd875;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(212,175,55,0.14);
+      background: rgba(0,0,0,0.25);
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .social:hover {
+      transform: translateY(-4px);
+      background: rgba(212,175,55,0.12);
+    }
+
+    footer {
+      margin-top: 64px;
+      color: rgba(255,255,255,0.35);
+      font-size: 0.85rem;
+      padding-bottom: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1rem; }
+      .bio { padding: 16px; font-size: 0.98rem; }
+      .stat-box { width: calc(50% - 20px); }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>دکتر مهدی پاک فطرت</h1>
+    <h2>فن بیان برای مدیران آینده‌نگر</h2>
 
-<header>
-  <h1>دکتر مهدی پاک فطرت</h1>
-  <h2>فن بیان برای مدیران آینده‌نگر</h2>
-</header>
+    <div class="bio">
+      دکتر مهدی پاک فطرت، مدرس دانشگاه و استاد فن بیان، با بیش از ۲۰ مقاله در حوزه فن بیان و مدیریت شهری.
+    </div>
 
-<div class="photo">
-  <img src="img_1670179702207.jpg" alt="دکتر مهدی پاک فطرت">
-</div>
+    <div class="section-title">افتخارات و دستاوردها</div>
+    <div class="stats">
+      <div class="stat-box">
+        <h3>۱۰+</h3>
+        <p>سخنران برتر کشور</p>
+      </div>
+      <div class="stat-box">
+        <h3>۸+</h3>
+        <p>سال تدریس دانشگاهی</p>
+      </div>
+      <div class="stat-box">
+        <h3>۲۰+</h3>
+        <p>مقاله تخصصی</p>
+      </div>
+    </div>
 
-<section>
-  <h3>معرفی</h3>
-  <p>
-    دکتر مهدی پاک فطرت، مدرس دانشگاه، سخنران حرفه‌ای و یکی از ۱۰ سخنران برتر کشور در مسابقه بزرگ تریبون است.
-    او دارای مدرک دکتری مهندسی عمران از دانشگاه شیراز بوده و در دانشگاه‌های شیراز، آپادانا و زند به تدریس دروس تخصصی اشتغال دارد.
-    در کنار فعالیت علمی، سال‌هاست در آموزشگاه فنان شیراز به آموزش فن بیان و مهارت‌های ارتباطی برای مدیران و علاقه‌مندان می‌پردازد.
-  </p>
+    <div class="links">
+      <a class="social" href="https://instagram.com/mehdi.pakfetrat" target="_blank">اینستاگرام — mehdi.pakfetrat</a>
+    </div>
 
-  <p>
-    دکتر پاک فطرت عضو کارگروه عمران و محیط‌زیست مرکز پژوهش‌های شورای شهر شیراز و کارمند رسمی شهرداری شیراز است.
-    ترکیب دانش فنی و قدرت سخنوری او را به چهره‌ای متمایز در حوزه آموزش تبدیل کرده است.
-  </p>
-</section>
-
-<footer>
-  <p>© 2025 دکتر مهدی پاک فطرت | طراحی و نگارش برای برند شخصی</p>
-  <p><a href="https://instagram.com/sokhanvari.ir">Instagram: @Sokhanvari.ir</a></p>
-</footer>
-
+    <footer>
+      <!-- Footer intentionally minimal per request -->
+    </footer>
+  </div>
 </body>
 </html>
